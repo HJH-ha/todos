@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 부트스트랩 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- 폰토오써 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <!-- css링크 -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form class="search">
+          <input
+            class="form-control m-auto"
+            type="text"
+            name="search"
+            placeholder="할일 찾기"
+          />
+        </form>
+      </header>
+
+      <ul class="list-group todos mx-auto text-light">
+        <!-- <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>일찍 일어나기</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>점심은 국밥으로</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          <span>퇴실 체크하기</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li> -->
+        <!-- 여기에 새로운 li추가 -->
+      </ul>
+      <!-- form 태그 input태그의 부모태그로 쓰는데 
+       form이 있으면 입력한 내용을 서버로 보내는 역할을 함 
+       input창에 입력후 엔터치 누르면 서버로 보내지고 초기화됨 
+       submit 이벤트 발생. action 으로 서버 주소 입력 -->
+      <form class="add text-center my-4">
+        <label class="text-light">새로운 할일을 추가...</label>
+        <input class="form-control m-auto" type="text" name="add" />
+      </form>
+    </div>
+    <!-- 자바스크립트 링크 -->
+    <script src="app.js"></script>
+  </body>
+</html>
